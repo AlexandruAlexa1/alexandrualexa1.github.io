@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="#" class="logo"></a>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certificates">Certificates</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- MAIN SECTION -->
+    <main class="main-section" id="home">
+        <p class="main-text">
+            Journey began in 2018.<br>
+            Self-taught developer.<br>
+            Thousands of hours dedicated to study and project development.<br>
+            4 years of Java experience.<br>
+            Udemy Instructor <a href="https://www.udemy.com/course/advanced-app-security-spring-security-5-jwt" target="_blank" style="letter-spacing: .5rem; color: #fff;">Link</a><br>
+            Interested in collaborating?<br>
+        </p>
+
+        <a href="assets/CV Alexandru-1-4.pdf" download="AlexandruAlexaCV" class="download-btn">DOWNLOAD CV</a>
+
+        <div class="img-container">
+            <img src="https://alexandrualexa1.github.io/IM/images/me.jpg" class="main-img">
+            <p>Alexandru Alexa</p>
+        </div>
+    </main>
+
+
+    <!-- PROJECTS SECTION -->
+    <section class="projects-section" id="projects">
+        <div class="title-container">
+            <h2 class="projects-title">
+                <span>P</span>
+                <span>r</span>
+                <span>o</span>
+                <span>j</span>
+                <span>e</span>
+                <span>c</span>
+                <span>t</span>
+                <span>s</span>
+            </h2>
+        </div>
+
+
+        <div class="slider-container">
+            <div id="slider" class="slider">
+                <!-- Projects will be dynamically generated here -->
+            </div>
+            <div class="arrow left-arrow" onclick="previousSlide()">&#10094;</div>
+            <div class="arrow right-arrow" onclick="nextSlide()">&#10095;</div>
+        </div>
+
+        <div id="card-container" class="card-container">
+            <!-- Cards will be dynamically generated here -->
+        </div>
+
+        <div class="responsive-projects"></div>
+    </section>
+
+    <!-- CERTIFICATES -->
+    <section class="certificates" id="certificates">
+        <h1>Certificates</h1>
+
+        <div class="card">
+            <img src="assets/images/certificates/c1.jpg" alt="Certificate 1">
+            <a href="https://www.udemy.com/certificate/UC-394d69fc-3b80-4c78-9733-6d1cb7b6cfca/" class="details-btn"
+                target="_blank">View Details</a>
+        </div>
+        <div class="card">
+            <img src="assets/images/certificates/c2.jpg" alt="Certificate 2">
+            <a href="https://www.udemy.com/certificate/UC-e46b114b-3deb-4eb8-a78d-b3cdd41cb0b9/" class="details-btn"
+                target="_blank">View Details</a>
+        </div>
+        <div class="card">
+            <img src="assets/images/certificates/c3.jpg" alt="Certificate 3">
+            <a href="https://www.udemy.com/certificate/UC-4484e4fc-4ecb-4c83-b831-43ff63acb280/" class="details-btn"
+                target="_blank">View Details</a>
+        </div>
+        <div class="card">
+            <img src="assets/images/certificates/c4.jpg" alt="Certificate 4">
+            <a href="https://www.udemy.com/certificate/UC-6e0e91c7-a1e4-49a5-8668-da37baa3bde2/" class="details-btn"
+                target="_blank">View Details</a>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact-section" id="contact">
+        <div class="form-container">
+            <form action="https://formspree.io/f/xanyvwpz" method="POST">
+                <h2>Contact Me</h2>
+
+                <div class="input-group">
+                    <input type="email" id="email" name="email" required>
+                    <label for="email">Email</label>
+                    <span class="border-effect"></span>
+                </div>
+
+                <div class="input-group">
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                    <label for="message">Mesaj</label>
+                    <span class="border-effect"></span>
+                </div>
+
+                <button type="submit">Trimite</button>
+            </form>
+        </div>
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-header">
+            <h2 class="footer-title">Stay Connected</h2>
+            <p class="footer-subtitle">Let’s build something amazing together!</p>
+        </div>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/alexandru-alexa-77a86120a/" target="_blank" class="social-link">
+                <i class="fab fa-linkedin social-icon"></i>
+            </a>
+            <a href="https://github.com/AlexandruAlexa1" target="_blank" class="social-link">
+                <i class="fab fa-github social-icon"></i>
+            </a>
+            <a href="https://twitter.com" target="_blank" class="social-link">
+                <i class="fab fa-twitter social-icon"></i>
+            </a>
+            <a href="https://www.instagram.com" target="_blank" class="social-link">
+                <i class="fab fa-instagram social-icon"></i>
+            </a>
+            <a href="https://www.behance.net" target="_blank" class="social-link">
+                <i class="fab fa-behance social-icon"></i>
+            </a>
+        </div>
+        <div class="footer-footer">
+            <p class="footer-copy">© 2024 Alexandru Alexa. All Rights Reserved.</p>
+            <p class="footer-design">Designed with ❤️ by Me.</p>
+        </div>
+    </footer>
+
+    <script src="projects.js"></script>
+    <script src="script.js"></script>
+    <script>
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
