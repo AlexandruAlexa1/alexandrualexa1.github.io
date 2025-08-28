@@ -282,18 +282,43 @@ html {
 
 @media (max-width: 450px) {
     .main-img {
-        max-width: 18rem;
+        max-width: 15rem;
         clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
     }
 
     .main-text {
-        font-size: 1.5rem;
+        font-size: 1.6rem;
         line-height: 2.5rem;
     }
 
     .download-btn {
         padding: .5rem 2rem;
         font-size: 1.5rem;
+    }
+
+    .main-img {
+    /* height: auto;
+    max-width: 40rem;
+    display: block;
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    zoom: 2; */
+    }
+
+    .img-container p {
+        position: absolute;
+        bottom: 0; 
+        right: 0; 
+        background-color: rgba(0, 0, 0, 0.6); 
+        color: white; 
+        padding: 0 1rem; 
+        font-family: 'Roboto', sans-serif; 
+        font-size: 1rem; 
+        text-transform: uppercase;
+        letter-spacing: .5rem;
+    }
+
+    .download-btn {
+        padding: 0.5rem 3rem;
     }
 }
 
