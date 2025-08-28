@@ -61,7 +61,7 @@ function createLargeCard(project) {
         <ul class="projects-list">
             <li>
                 <h3>${project.title}</h3>
-                <a href="">View details</a>
+                <a href="${project.link}">View details</a>
             </li>
         </ul>
     `
@@ -70,7 +70,6 @@ function createLargeCard(project) {
 }
 
 
-// Adaugă ascultători de evenimente pentru thumbnail-uri
 function addThumbnailEventListeners() {
     document.querySelectorAll('.thumbnail').forEach(thumbnail => {
         thumbnail.addEventListener('click', (event) => {
@@ -83,7 +82,6 @@ function addThumbnailEventListeners() {
     });
 }
 
-// Actualizează poziția sliderului
 function updateSliderPosition() {
     slider.style.transform = `translateX(-${currentSlide * 100}%)`;
     if (currentSlide % 5 === 0) {
@@ -92,7 +90,6 @@ function updateSliderPosition() {
     updateCardSelection();
 }
 
-// Actualizează lista de carduri afișate
 function updateCardList() {
     const startIndex = Math.floor(currentSlide / 5) * 5;
     cardContainer.querySelectorAll(".card").forEach((card, index) => {
@@ -103,31 +100,26 @@ function updateCardList() {
     });
 }
 
-// Evidențiază cardul corespunzător sliderului curent
 function updateCardSelection() {
     cards.forEach((card, index) => {
         card.classList.toggle("active", index === (currentSlide % 5));
     });
 }
 
-// Schimbă la slide-ul următor
 function nextSlide() {
     currentSlide = (currentSlide + 1) % projects.length;
     updateSliderPosition();
 }
 
-// Schimbă la slide-ul anterior
 function previousSlide() {
     currentSlide = (currentSlide - 1 + projects.length) % projects.length;
     updateSliderPosition();
 }
 
-// Începe schimbarea automată a slide-urilor
 function startAutoSlide() {
-    autoSlideInterval = setInterval(nextSlide, 5000); // Schimbă slide-ul la fiecare 5 secunde
+    autoSlideInterval = setInterval(nextSlide, 5000);
 }
 
-// Oprește schimbarea automată a slide-urilor
 function stopAutoSlide() {
     clearInterval(autoSlideInterval);
 }
