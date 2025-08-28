@@ -689,10 +689,24 @@ html {
     }
 
     .projects-list li a {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         text-transform: uppercase;
     }
 }
+
+@media (hover: none) and (pointer: coarse) {
+  .large-card:hover,
+  .project-thumbnails img.thumbnail:hover,
+  .project-details a:hover,
+  .slide:hover .project-details {
+    transform: none !important;
+    border-color: inherit !important;
+    box-shadow: none !important;
+    background-color: inherit !important;
+    opacity: 1 !important; 
+  }
+}
+
 
 /* CERTIFICATES SECTION */
 .certificates {
