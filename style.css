@@ -993,6 +993,7 @@ h2 {
     color: #fff;
     outline: none;
     transition: border-color 0.3s;
+    z-index: 100;
 }
 
 .input-group input:focus,
