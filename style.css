@@ -959,7 +959,7 @@ body::before {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100dvh;
     width: 100%;
 }
 
@@ -1048,7 +1048,7 @@ button:hover {
 
 @media (max-width: 500px) {
     .contact-section {
-        height: 60vh;
+        height: 60dvh;
     }
 
     .form-container {
